@@ -15,8 +15,17 @@ function howMuchDoYouWantToSaveBeforeDeductibles() {
 	const save = document.getElementById("save").value //how much you want to save per paycheck
 	const howmanychecks = Math.abs((pay - goal))/ save //how many paychecks until goal is reached
 	document.getElementById("howlong").innerHTML = howmanychecks + " paychecks";
+    window.location.href = "outputpage.html";
 	//console.log(howmanychecks);
 }
+
+function stopRKey(evt) {
+    var evt = (evt) ? evt : ((event) ? event : null);
+    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+    if ((evt.keyCode == 13) && (node.type == "text" || node.type == "number")) { return false; }
+}
+
+document.onkeypress = stopRKey;
 
 function howMuchDeductiblesPerX() {
 	const pay = document.getElementById("check").value //this is how much a person gets per paycheck
