@@ -9,6 +9,7 @@ function howMuchDoYouWantToSaveBeforeDeductibles() {
 	//console.log(howmanychecks);
 }
 
+var input = document.getElementById("deductibles");
 input.addEventListener("keyup", function (event) {
 	if (event.keyCode === 13) {
 		event.preventDefault();
