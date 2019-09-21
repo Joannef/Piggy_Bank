@@ -1,0 +1,89 @@
+﻿h1 {
+    color: darkgrey;
+    font-size: 75px;
+    font-family: 'Cabin', sans-serif;
+    text-shadow: 0px 4px 3px grey, 
+                 0px 8px 13px grey;
+    text-align: center;
+}
+
+.inputs {
+    padding-left: 31%;
+    text-align: center;
+    font-size: 200%;
+    max-width: 1500px;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+    background-image: url("wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icons {
+    width: 75px;
+}
+
+.userinput {
+    padding-top:20%;
+    padding-bottom:80%;
+}
+
+.form-group {
+    font-size: 250%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dropdown {
+    font-size: 150%;
+    max-width: 100px;   
+}
+
+.submitbutton {
+    padding-bottom: 20%;
+}
+
+.nextbutton {
+    transition: all 0.5s;
+    box-shadow: 0 9px #999;
+}
+
+.nextbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nextbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nextbutton:hover span {
+    padding-right: 25px;
+}
+
+.nextbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.nextbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.dropdownmenu {
+    font-size: 40%;
+}
