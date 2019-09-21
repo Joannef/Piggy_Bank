@@ -5,21 +5,32 @@
     text-align: center;
 }
 
+.jumbotron {
+    color:#0069BA;
+    background-color: #00213B;
+}
+
 .inputs {
     padding-left: 29%;
     text-align: center;
     font-size: 20px;
     max-width: 75%;
     font-family: 'Asap', sans-serif;
+    color:#008EFA;
 }
 
 .form-control {
+    margin-top: 15px;
+    border: none;
+    background-color: rgba(255,255,255,0);
     padding: 10px 10px;
     font-size:30px;
+    color:#B8E8FF;
 }
 
 body {
-    background-image: url("wallpaper.png");
+    /* background-image: url("wallpaper.png"); */
+    background-color: #00457A;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
