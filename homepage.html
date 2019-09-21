@@ -52,7 +52,15 @@
                 <p class="form-group" name="pay">
                     Paycheck Amount:
                 </p>
-                <input type="number" class="form-control" id="paycheck" min="0" step="0.01" placeholder=" $0.00" required><button class="nextbutton btn btn-primary btn-lg" href="#goal"><span>Next</span></button>
+                <input type="number" class="form-control" id="check" min="0" step="0.01" placeholder=" $0.00" required>
+                <div class="dropdown form-group">
+                    <select id="checkType" class="form-control dropdownmenu selectpicker">
+                        <option value="weekly">Paid Weekly</option>
+                        <option value="bi-weekly">Paid Bi-Weekly</option>
+                        <option value="monthly">Paid Monthly</option>
+                    </select>
+                </div>
+                <button class="nextbutton btn btn-primary btn-lg" href="#goal"><span>Next</span></button>
             </div>
             <div class="userinput">
                 <p class="form-group" name="goal">
@@ -78,9 +86,9 @@
                     <input type="number" class="form-control" name="essentials" min="0" step="0.01" placeholder=" $0.00" required>
                     <div class="dropdown form-group">
                         <select id="dateType" class="form-control dropdownmenu selectpicker">
-                            <option name="time" id="day"> Daily
-                            <option name="time" id="week"> Weekly
-                            <option name="time" id="month"> Monthly
+                            <option name="time" id="day"> Daily </option>
+                            <option name="time" id="week"> Weekly </option>
+                            <option name="time" id="month"> Monthly </option>
                         </select>
                     </div>
                 </p>
