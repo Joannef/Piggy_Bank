@@ -12,30 +12,30 @@
     <h1>PROJECT NAME</h1>
     <form>
         Current Bank Amount:
-        <input type="number" name="current_amount">
+        <input type="number">
         <br><br>
         Paycheck Amount:
-        <input type="number" id="check"> <button onclick="HowMuchAPayCheck();return false;">Enter</button>
+        <input type="number" id="check"> <!-- <button onclick="HowMuchAPayCheck();return false;">Enter</button> -->
         <br><br>
         Goal Name:
-        <input type="text" name="g_name">
+        <input type="text" >
         Goal Amount:
-        <input type="number" name="g_amount">
+        <input type="number" id="g_amount">
         <br><br>
         Amount save per paycheck:
-        <input type="number" name="save">
+        <input type="number" id="save">
         <br><br>
         Deductable essentials:
-        <input type="number" name="essentials">
+        <input type="number">
         <select name="time">
             <option value="day">Day</option>
             <option value="week">Week</option>
             <option value="month">Month</option>
         </select>
-        <button>Enter</button>
         <br><br>
-        <input type="submit" value="Submit">
+        <button onclick="howMuchDoYouWantToSave();return false;">Submit</button>
     </form>
+    <p id="howlong"></p>
 </body>
 
 </html>
