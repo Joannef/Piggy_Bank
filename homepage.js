@@ -1,14 +1,3 @@
-
-// function howMuchDoYouWantToSave() {
-// 	const pay = document.getElementById("paycheck").value; //this is how much a person gets per paycheck
-//     const goal = document.getElementById("g_amount").value; //this is how much you want to save
-//     const save = document.getElementById("save").value; //how much you want to save per paycheck
-//     const howmanychecks = Math.abs((pay - goal) / save); //how many paychecks until goal is reached
-//     document.getElementById("howlong").innerHTML = howmanychecks + " paychecks";
-//     console.log(howmanychecks);
-//     window.location.href = "outputpage.html";
-// }
-
 //Calculate how many paychecks it would take to save for goal after taxes, but before any expenses
 function howMuchDoYouWantToSaveBeforeDeductibles() {
 	const pay = document.getElementById("check").value //this is how much a person gets per paycheck
