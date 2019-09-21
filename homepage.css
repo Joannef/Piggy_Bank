@@ -8,10 +8,10 @@
 }
 
 .inputs {
-    padding-left: 31%;
+    padding-left: 29%;
     text-align: center;
     font-size: 200%;
-    max-width: 1500px;
+    max-width: 75%;
     font-family: 'Asap', sans-serif;
 }
 
@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 0;
 }
 
 .icons {
