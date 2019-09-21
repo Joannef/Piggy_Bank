@@ -31,74 +31,78 @@
     <div class="jumbotron">
         <h1><span class="fa fa-money"></span> Expenses Tracker</h1>
     </div>
-
-<<<<<<< HEAD
-=======
-        <form class="inputs">
-            <div class="userinput">
-                <p class="form-group currentamount">
-                    Current Bank Amount:
-                    <input type="number" class="form-control" id="current_amount" min="0" step="0.01" placeholder=" $0.00" required><button class="nextbutton btn btn-primary btn-lg" href="#pay"><span>Next</span></button>
-                </p>
+    <form class="inputs">
+        <div class="userinput">
+            <p class="form-group currentamount">
+                Current Bank Amount:
+                <input type="number" class="form-control" id="current_amount" min="0" step="0.01" placeholder=" $0.00"
+                    required><button class="nextbutton btn btn-primary btn-lg" href="#pay"><span>Next</span></button>
+            </p>
+        </div>
+        <div class="userinput">
+            <p class="form-group" name="pay">
+                Paycheck Amount:
+            </p>
+            <input type="number" class="form-control" id="check" min="0" step="0.01" placeholder=" $0.00" required>
+            <div class="dropdown form-group">
+                <select id="checkType" class="form-control dropdownmenu selectpicker">
+                    <option value="weekly">Paid Weekly</option>
+                    <option value="bi-weekly">Paid Bi-Weekly</option>
+                    <option value="monthly">Paid Monthly</option>
+                </select>
             </div>
-            <div class="userinput">
-                <p class="form-group" name="pay">
-                    Paycheck Amount:
-                </p>
-                <input type="number" class="form-control" id="check" min="0" step="0.01" placeholder=" $0.00" required>
+            <button class="nextbutton btn btn-primary btn-lg" href="#goal"><span>Next</span></button>
+        </div>
+        <div class="userinput">
+            <p class="form-group" name="goal">
+                What is your goal?
+            </p>
+            <input type="text" class="form-control" id="g_name" placeholder=" Vacation" required><button
+                class="nextbutton btn btn-primary btn-lg" href="#goalamount"><span>Next</span></button>
+        </div>
+        <div class="userinput">
+            <p class="form-group" name="goalamount">
+                Goal Amount:
+            </p>
+            <input type="number" class="form-control" id="g_amount" min="0" step="0.01" placeholder=" $0.00"
+                required><button class="nextbutton btn btn-primary btn-lg"
+                href="#amountsaved"><span>Next</span></button>
+        </div>
+        <div class="userinput">
+            <p class="form-group" name="amountsaved">
+                Amount Saved Per Paycheck:
+            </p>
+            <input type="number" class="form-control" id="save" min="0" step="0.01" placeholder=" $0.00"
+                required><button class="nextbutton btn btn-primary btn-lg" href="#pay"><span>Next</span></button>
+        </div>
+        <div class="submitbutton">
+            <p class="form-group">
+                Deductible Essentials:
+                <input type="number" class="form-control" name="essentials" min="0" step="0.01" placeholder=" $0.00"
+                    required>
                 <div class="dropdown form-group">
-                    <select id="checkType" class="form-control dropdownmenu selectpicker">
-                        <option value="weekly">Paid Weekly</option>
-                        <option value="bi-weekly">Paid Bi-Weekly</option>
-                        <option value="monthly">Paid Monthly</option>
+                    <select id="dateType" class="form-control dropdownmenu selectpicker">
+                        <option name="time" id="day"> Daily </option>
+                        <option name="time" id="week"> Weekly </option>
+                        <option name="time" id="month"> Monthly </option>
                     </select>
                 </div>
-                <button class="nextbutton btn btn-primary btn-lg" href="#goal"><span>Next</span></button>
-            </div>
-            <div class="userinput">
-                <p class="form-group" name="goal">
-                    What is your goal?
-                </p>
-                <input type="text" class="form-control" id="g_name" placeholder=" Vacation" required><button class="nextbutton btn btn-primary btn-lg" href="#goalamount"><span>Next</span></button>
-            </div>
-            <div class="userinput">
-                <p class="form-group" name="goalamount">
-                    Goal Amount:
-                </p>
-                <input type="number" class="form-control" id="g_amount" min="0" step="0.01" placeholder=" $0.00" required><button class="nextbutton btn btn-primary btn-lg" href="#amountsaved"><span>Next</span></button>
-            </div>
-            <div class="userinput">
-                <p class="form-group" name="amountsaved">
-                    Amount Saved Per Paycheck:
-                </p>
-                <input type="number" class="form-control" id="save" min="0" step="0.01" placeholder=" $0.00" required><button class="nextbutton btn btn-primary btn-lg" href="#pay"><span>Next</span></button>
-            </div>
-            <div class="submitbutton">
-                <p class="form-group">
-                    Deductible Essentials:
-                    <input type="number" class="form-control" name="essentials" min="0" step="0.01" placeholder=" $0.00" required>
-                    <div class="dropdown form-group">
-                        <select id="dateType" class="form-control dropdownmenu selectpicker">
-                            <option name="time" id="day"> Daily </option>
-                            <option name="time" id="week"> Weekly </option>
-                            <option name="time" id="month"> Monthly </option>
-                        </select>
-                    </div>
-                </p>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg" value="submit" onclick="howMuchDoYouWantToSave(); return false;">Submit</button><br><br><br><br><br><br><br><br>
+            </p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" value="submit"
+            onclick="howMuchDoYouWantToSave(); return false;">Submit</button><br><br><br><br><br><br><br><br>
 
-        </form>
-        <p id="howlong"></p>
+    </form>
+    <p id="howlong"></p>
 
-        <!--                end of form                 -->
+    <!--                end of form                 -->
 
 
 
 
 
-        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    </body>
->>>>>>> 221e3feff6a62a1c8ead42f6957325ad227f8b3e
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
 </html>
