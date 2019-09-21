@@ -102,3 +102,9 @@ html {
 .dropdownmenu {
     font-size: 40%;
 }
+
+#howlong {
+    font-family: Quattrocento Sans;
+    border-style: dotted;
+    font-size: 50px;
+}
