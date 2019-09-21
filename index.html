@@ -15,25 +15,30 @@
         <input type="number">
         <br><br>
         Paycheck Amount:
-        <input type="number" id="check"> <!-- <button onclick="HowMuchAPayCheck();return false;">Enter</button> -->
+        <input type="number" id="check">
+        <select id="checkType">
+            <option>Paid Weekly</option>
+            <option>Paid Bi-Weekly</option>
+        </select>
         <br><br>
         Goal Name:
-        <input type="text" >
+        <input type="text">
         Goal Amount:
         <input type="number" id="g_amount">
         <br><br>
         Amount save per paycheck:
         <input type="number" id="save">
         <br><br>
-        Deductable essentials:
-        <input type="number">
-        <select name="time">
+        Deductible essentials:
+        <input id="deductibles" type="number">
+        <select id="dateType">
             <option value="day">Day</option>
             <option value="week">Week</option>
             <option value="month">Month</option>
         </select>
         <br><br>
-        <button onclick="howMuchDoYouWantToSave();return false;">Submit</button>
+        <button
+            onclick="howMuchDoYouWantToSaveBeforeDeductibles();howMuchDeductiblesPerX();return false;">Submit</button>
     </form>
     <p id="howlong"></p>
 </body>
