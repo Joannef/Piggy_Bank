@@ -67,4 +67,7 @@ function howMuchDeductiblesPerX() {
 
 	console.log("Finish Running")
 
+    document.getElementById("howmuchafter").innerHTML = "$" + totaldeductions + " after saving and deductions per paycheck";
+
+
 }
