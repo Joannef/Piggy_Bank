@@ -26,8 +26,6 @@
 <body>
 
 
-
-
     <div class="jumbotron">
         <h1><span class="fa fa-money"></span> Expenses Tracker</h1>
     </div>
@@ -78,27 +76,26 @@
         <div class="submitbutton">
             <p class="form-group">
                 Deductible Essentials:
-                <input type="number" class="form-control" name="essentials" min="0" step="0.01" placeholder=" $0.00"
+                <input type="number" class="form-control" id="deductibles" min="0" step="0.01" placeholder=" $0.00"
                     required>
                 <div class="dropdown form-group">
                     <select id="dateType" class="form-control dropdownmenu selectpicker">
-                        <option name="time" id="day"> Daily </option>
-                        <option name="time" id="week"> Weekly </option>
-                        <option name="time" id="month"> Monthly </option>
+                        <option name="time" value="week"> Weekly </option>
+                        <option name="time" value="month"> Monthly </option>
                     </select>
                 </div>
             </p>
         </div>
         <button type="submit" class="btn btn-primary btn-lg" value="submit"
-            onclick="howMuchDoYouWantToSave(); return false;">Submit</button><br><br><br><br><br><br><br><br>
+            onclick="howMuchDoYouWantToSaveBeforeDeductibles();howMuchDeductiblesPerX();return false;">Submit</button>
 
-    </form>
+        <br><br><br><br><br><br><br><br>
+
+
     <p id="howlong"></p>
+    </form>
 
     <!--                end of form                 -->
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
