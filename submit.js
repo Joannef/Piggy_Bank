@@ -13,6 +13,6 @@ function howMuchDeductiblesPerX() {
 	const typedate = document.getElementById("dateType").value
 	console.log(typedate);
 	const totaldeductions = document.getElementById("deductibles").value
-	console.log(totaldeductions)
-	//if (typedate === "day")
+	console.log(totaldeductions);
+	// if (typedate === )
 }
