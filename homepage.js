@@ -4,15 +4,16 @@ function howMuchDoYouWantToSaveBeforeDeductibles() {
 	const goal = document.getElementById("g_amount").value //this is how much you want to save up
 	const save = document.getElementById("save").value //how much you want to save per paycheck
 	const howmanychecks = Math.abs((pay - goal)) / save //how many paychecks until goal is reached
-	document.getElementById("howlong").innerHTML = howmanychecks + " paychecks";
-	window.location.href = "outputpage.html";
+    //window.location.href = "outputpage.html";
+    document.getElementById("howlong").innerHTML = howmanychecks + " paychecks until your goal is reached!";
 	//console.log(howmanychecks);
 }
 
 function stopRKey(evt) {
-	var evt = (evt) ? evt : ((event) ? event : null);
-	var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
-	if ((evt.keyCode == 13) && (node.type == "text" || node.type == "number")) { return false; }
+
+    var evt = (evt) ? evt : ((event) ? event : null);
+    var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+    if ((evt.keyCode == 13) && (node.type == "text" || node.type == "number")) { return false; }
 }
 
 document.onkeypress = stopRKey;
