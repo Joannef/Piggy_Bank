@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/homepage.css">  
+
+
+<!-- js -->
+		<script>
+			function howMuchDoYouWantToSave() {
+			const pay = document.getElementById("paycheck").value; //this is how much a person gets per paycheck
+			const goal = document.getElementById("g_amount").value; //this is how much you want to save 
+			const save = document.getElementById("save").value; //how much you want to save per paycheck
+			const howmanychecks = (pay - goal) / save; //how many paychecks until goal is reached
+			document.getElementById("howlong").innerHTML = howmanychecks + " paychecks";
+			console.log(howmanychecks);
+		}
+		</script>
+<!-- -->
+
+        <title>Finances</title>
+
+        <!--                    title of the website            -->
+
+        <div class="jumbotron">
+            <h1><span class="fa fa-money"></span> Expenses Tracker</h1>
+        </div>
+
+        
+
+    </head>
+
+    <body>

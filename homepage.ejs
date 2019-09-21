@@ -1,0 +1,45 @@
+<% include C:\Users\Stannie\Documents\Web\hackathon\headers\header.ejs %>
+<link rel="stylesheet" href="/homepage.css">  
+
+<!--                end of title                        -->
+
+
+<!--         all the inputs for the stuff. name and value are unchanged         -->
+
+
+    <form class="inputs" action="/expenses">
+        <p class="form-group">
+            Current Bank Amount:
+            <input type="number" class="form-control" id="current_amount" min="0" step="0.01" placeholder=" $0.00" required>
+        </p>
+        <p class="form-group">
+            Paycheck Amount:  
+            <input type="number" class="form-control" id="paycheck" min="0" step="0.01" placeholder=" $0.00" required>
+        </p>
+        <p class="form-group">
+            Goal Name: 
+            <input type="text" class="form-control" id="g_name" placeholder=" Vacation" required>
+        </p>
+        <p class="form-group">
+            Goal Amount: 
+            <input type="number" class="form-control" id="g_amount" min="0" step="0.01" placeholder=" $0.00" required>
+        </p>
+        <p class="form-group">
+            Amount Saved Per Paycheck: 
+            <input type="number" class="form-control" id="save" min="0" step="0.01" placeholder=" $0.00" required>
+        </p>
+        <p class="form-group">
+            Deductible Essentials:
+            <input type="number" class="form-control" name="essentials" min="0" step="0.01" placeholder=" $0.00" required>
+            <input type="radio" name="time" id="day"> Daily
+            <input type="radio" name="time" id="week"> Weekly
+            <input type="radio" name="time" id="month"> Monthly
+        </p>
+        <button type="submit" class="btn btn-primary btn-lg" value="submit" onclick="howMuchDoYouWantToSave(); return false;">Submit</button>
+    </form>
+	<p id="howlong"></p>
+
+<!--                end of form                 -->
+
+
+<% include C:\Users\Stannie\Documents\Web\hackathon\headers\footer.ejs %>
